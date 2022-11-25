@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">  
+    <title>Formulario Anhanguera</title>
+</head>
+<body>
+    <section class="quadro">
+        <form  method="post" action="">
+            <h1>Anhanguera</h1>
+            <label class="nomes" for="texto">Usuário</label>
+            <input type="text" id="nome" name="usuario"/>
+            <label class="nomes" for="senha">Senha</label>
+            <input type="password" id="senha" name="senha" />
+            
+            <div class="botoes">
+            <input type="reset" name="limpar" id="limpar" value="Cancelar"/>
+            <a href="#boasVindas" class="btn" id="enviar">Enviar</a>
+            </div>
+        </form>
+
+        <div  id="boasVindas" class="boasVindas">
+            <div>
+            <h1>Bem vindo Sr(a) <span id="nomeUsuario"></span> ao mundo da tecnologia!!</h1>
+            <a href="#fechar" class="fechar">X</a>    
+        </div>    
+        </div>
+
+    </section>
+
+    <script>
+        function boasVindas(){
+            var nome = document.getElementById("nome").value;
+            var digitado = document.getElementById("nomeUsuario").innerHTML = nome;
+        }
+        var botao = document.getElementById("enviar").addEventListener("click",boasVindas);
+
+    </script>
+    
+            
+
+
+</body>
+</html

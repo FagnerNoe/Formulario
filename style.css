@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgb(255, 89, 11); 
+}
+
+.quadro{
+    width: 70%;
+    height: 450px;
+    margin:100px auto;
+    border: 1px solid yellow;
+    box-shadow: 2px 3px 8px 2px purple;
+    border-radius: 15px ;
+    display: flex;
+    flex-flow: column wrap;
+    align-items:center;
+}
+
+form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: 3px auto;
+    flex-flow: column nowrap;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+h1{
+    font-size: 32px;
+    font-style: italic;
+    border-bottom: 2px solid rgb(255, 255, 7); 
+    width: 90%; 
+    text-align: center;  
+}
+
+.nomes{
+    font-size: 24px;
+    font-style: italic;
+    color:rgb(240, 243, 234);
+    margin-bottom: -25px;
+    
+}
+
+input{
+    width: 60%;
+    height: 32px;
+    border-radius: 10px;
+    background-color: rgba(211, 116, 248, 0.644);
+    border: none;
+    box-shadow: 2px 2px 5px yellow;
+    font-size: 18px;
+    padding: 5px;
+    text-align: center;
+    color: rgb(95, 228, 238);
+    outline:hidden;
+}
+
+input:hover{
+    background-color: azure;
+    color: black;
+}
+
+
+.botoes{
+    width:60%;
+    height: 30px;
+    margin:3px auto;
+    display: flex;
+    justify-content:space-between;
+}
+
+.btn,#limpar {
+    width: 80%;
+    height: 32px;
+    border-radius:8px;
+    margin:0px 2px 0px 3px;
+    box-shadow: 2px 2px 5px 1px black;
+    background-color: antiquewhite;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    text-align:center;
+    padding: 5px;
+    border: none;
+    text-decoration: none;
+}
+
+.boasVindas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgba(0,0,0,0.8);
+    z-index:3;
+    opacity:0;
+    -webkit-transition: opacity 500ms ease-in-out;
+    -moz-transition: opacity 500ms ease-in-out;
+    transition: opacity 600ms ease-in-out;
+    pointer-events: none;  
+}
+
+.boasVindas:target{
+    opacity: 1;
+    pointer-events: auto;
+
+}
+
+.boasVindas > div{
+    width: 60vw;
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    background-image:linear-gradient(-40deg,rgb(93, 20, 122),rgb(255, 113, 201));
+    border-radius: 25px;
+    color: rgb(243, 222, 30);
+    box-shadow: 0 5px 8px orange;
+    margin: 100px auto;
+}
+
+span{
+    color:white;
+}
+
+
+.fechar{  
+    position:absolute;
+    right:20%;
+    top:16%;
+    width:50px;
+    height: 50px;   
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+    background: #ffffff;
+    border-radius:50%;
+    font-size: 16px;
+    color: #8d0088;
+    text-decoration: none;
+
+
+}
+
+
+
